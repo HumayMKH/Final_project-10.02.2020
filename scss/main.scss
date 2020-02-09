@@ -1,0 +1,36 @@
+@import "variables";
+@import "Extends";
+@import "homePage";
+@import "pricing";
+@import "blog-list";
+@import "log-in";
+@import "sidebar";
+
+
+
+
+
+body{
+    background-color:$first-color ;
+    font-family: $main-font;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1040px;
+    }   
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+.popular{
+    padding: 96px 0;
+}

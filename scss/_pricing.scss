@@ -1,0 +1,95 @@
+.pricing-page{
+    @extend  %IntroWithNavbar;
+    main{
+        .pricing-content{
+    .main-text{
+        font-size:$subtitle-size;
+        font-weight: 500;
+        line-height: 1.7;
+        margin-top:24px;
+        color:$six-color;
+    }
+    .card{
+        border: .0625rem solid rgba(0,0,0,.05);
+        .pricing-group{
+            .btnplan{
+                border:1px solid $sec-color;
+                color:$sec-color;
+                &:hover{
+                    background-color: $sec-color;
+                    color:$first-color;
+                }}
+                .btnplan2{
+                    border:1px solid #2dce89;
+                    color:#2dce89;
+                    &:hover{
+                        background-color: #2dce89;
+                        color:$first-color;
+                    }}
+                    .btnplan3{
+                        border:1px solid #11cdef;
+                        color:#11cdef;
+                        &:hover{
+                            background-color: #11cdef;
+                            color:$first-color;
+                        }}
+            
+            .btn1{
+            position: relative;
+            text-transform: uppercase;
+            transition: all .15s ease;
+            letter-spacing: 1px;
+            font-size: 14px;
+            padding:10px 20px;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-weight: 600;
+            }
+            .bg-color-main{
+                background-color: #f4f5f7;
+                ul{
+                    li{
+                        padding: 8px 0;
+                        color:$six-color;
+                    }
+                }
+            }
+            h3{
+                font-size: 28px;
+                font-weight: 700!important;
+            }
+            .bg-clr1{
+                background-color: $sec-color;
+            }
+            .bg-clr2{
+                background-color: #2dce89;
+            }
+            .bg-color3{
+                background-color: #11cdef;
+            }
+            .forgroup{
+                .txt-clr{
+                    color:$first-color;
+                }
+                p{
+                    font-size:$text-title-size;
+                }
+              
+            }
+    .text-clr1{
+        color:$sec-color;
+    }
+    .text-clr2{color:#2dce89;}
+    .text-clr3{
+        color:#11cdef;
+    }
+        }
+
+
+    }
+        }
+    }
+    footer{
+        @extend  %myFooterExtend;
+    }
+}

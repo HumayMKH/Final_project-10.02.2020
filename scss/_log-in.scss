@@ -1,0 +1,185 @@
+.login{
+    .img-content{
+        h4{
+            color:$first-color;
+            font-weight: 700;
+            line-height: 1.5;
+            font-size: 24px;
+        }
+        p{
+            font-size:$text-title-size;
+            font-weight: 500;
+            color:$first-color;
+        }
+        a{
+            color: $first-color;
+            background-color: #2dce89;
+            border-color: #2dce89;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            text-transform: uppercase;
+            transition: all .15s ease;
+            letter-spacing: 1px;
+            font-size: $button-size;
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            line-height: 1.5;
+            border-radius: 4px;
+            &:hover{
+                box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+                transform: translateY(-1px);
+
+            }
+        }
+    }
+    .site-content{
+        h2{
+font-size: 32px;
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.7;
+        color:$five-color;
+        }
+        .shadow1{
+            border:1px solid #f6f9fc;
+            box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+            border-radius: 4px;
+            background-color: #f4f5f7;
+            .card-header1{
+                padding: 1.25rem 1.5rem;
+                margin-bottom: 0;
+                background-color: #f6f9fc;
+                .text-clr{
+                    h6{
+                    color:$five-color;
+                    font-weight: 700;
+                }}
+                .btnicon{
+                    padding:10px 20px;
+                    text-transform: uppercase;
+    transition: all .15s ease;
+  font-weight: 600;
+  display:inline-block;
+    letter-spacing: 1px;
+    font-size: 14px;
+    border-color: $first-color;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    line-height: 1.5;
+    border-radius:4px;
+    &:hover{
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transform: translateY(-1px);
+    
+    background-color: $first-color;
+    border-color:  $first-color;
+    }
+
+                    .colorlink{
+                    color:$sec-color;
+                }}
+                
+            }
+            .card-body{
+                .text-clr{
+                    h6{
+                        color:$five-color;
+                        font-weight: 700;
+                    }
+                }
+                form{
+                    .input-parametr{
+                        box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+                        border: 0;
+                        transition: box-shadow .15s ease;
+                        border-radius: 4px;
+                        display:flex;
+                        .input-before{
+                            margin-right: -1px;
+                            display:flex;
+                            span{
+                                display: flex;
+                                align-items: center;
+                                padding: 10px 12px;
+                                margin-bottom: 0;
+                                font-size:$text-title-size;
+                                font-weight: 400;
+                                line-height: 1.5;
+                                color: #adb5bd;
+                                text-align: center;
+                                background-color: $first-color;
+                                border: 1px solid #cad1d7;
+                                border-radius: 4px;
+                                                            border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                                border: 0;
+                                box-shadow: none;
+                            }}
+                            input{
+                                border-left: 0;
+                                padding-left: 0;
+                                border-top-left-radius: 0;
+                                border-bottom-left-radius: 0;
+                                border: 0;
+                                box-shadow: none;
+                                font-size:$button-size;
+                                height: calc(2.75rem + 2px);
+                                &::placeholder{
+                                    color:#cad1d7;
+                                }
+                            }
+                        }
+                    }
+                    .custom-control-input{
+                        box-sizing: border-box;
+                        padding: 0;
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;                        
+                    
+                    }
+
+                    
+                    .button{
+                        color: $first-color;
+                        background-color: $sec-color;
+                        border-color: $sec-color;
+                        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                        text-transform: uppercase;
+                        transition: all .15s ease;
+                        letter-spacing: 1px;
+                        font-size: $button-size;
+                        display: inline-block;
+                        font-weight: 600;
+                        text-align: center;
+                        border: 1px solid transparent;
+                        padding: 10px 20px;
+                        line-height: 1.5;
+                        border-radius: 4px;
+                        &:hover{
+                            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+                            transform: translateY(-1px);
+                        
+                        }
+                        .custom-control{
+                           
+                        }
+                    }
+                }
+            }
+        }
+    } 
+
+.btnicon:hover{
+    .colorlink{
+        color: #212529!important;
+    }
+}
+@media screen and (max-width:991.98px){
+    .img-content{
+        display: none;
+    }
+}

@@ -1,0 +1,224 @@
+.sidebar-page{
+    @extend %IntroWithNavbar;
+
+    main{
+        .sidebar{
+            .switcher{
+                span{
+            line-height: 40px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all .15s ease;
+            color:$sec-color;
+            background-color: $first-color;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            display:inline-block;
+                }
+                }
+                .custom-select{
+                    padding: 6px 28px 6px 12px;
+                    line-height: 1.5;
+                    height: calc(2.75rem + 2px);
+                    border: 1px solid #cad1d7; 
+                    border-radius: .25rem;
+                    box-shadow: inset 0 1px 2px rgba(0,0,0,.075);    
+                color:$four-color;
+                &:focus{
+                    border-color: rgba(50,151,211,.25);
+                    outline: 0;
+                    box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 0 0 rgba(50,151,211,.5);
+                }
+            }
+            
+        }
+        .grid-list{
+            &:hover{  transform: translate3d(0,-6px,0);
+            transition:all 0.3s linear;}
+            .items{
+                box-shadow: 0 0 20px rgba(0,0,0,.05);
+        
+                    width: 100% !important;
+                    height: 320px !important;
+                   
+                   border-radius:4px ;
+                  
+            }
+            .grid-list-text{
+                position: absolute;
+                bottom: 0;
+                top: 43%;
+                left: 15px;
+                width: 93%;
+                z-index: 50;
+                box-sizing: border-box;
+                background: $first-color;
+                border-radius: 4px;
+                padding: 20px 32px;
+                transition:all 0.3s linear;
+                }
+                h3{
+                   color: $five-color;
+                    font-size: 1rem;
+            bottom: -1px;
+            margin: 0;
+            line-height: 31px;
+            font-weight: 700;
+                }
+                .reviews,small{
+                    font-size: 12.8px;
+                    color:$six-color;
+                }
+                .left{
+                    display: inline-block;
+                    padding: 5.6px 6px;
+                    font-size: 66%;
+                    font-weight: 600;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    padding-right: 14px;
+                    padding-left: 14px;
+                    border-radius: 10px;
+                    color: #2643e9;
+                    background-color: rgba(203,210,246,.5);
+                }
+                .star{
+                    margin-top: 12px;
+                    margin-bottom: 8px;
+                    color: #edb867;
+                
+                }
+           
+            .fa-heart{
+                line-height: 40px;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            text-align: center;
+            border-radius: 50%;
+            font-size: .875rem;
+            font-weight: 500;
+            transition: all .15s ease;
+            background-color: $sec-color;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            display:block;
+            position: absolute;
+            right: 25px;
+            top: 10px;
+            color:$first-color;
+            }}
+            @media screen and (max-width:991.98px){
+                .grid-list-text{
+                    width: 94%!important;
+            }}
+            @media screen and (max-width:767px){
+                .grid-list-text{
+                    width: 95% !important;
+            }}
+           .pagination{
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            a{
+                color: #8898aa;
+                display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0 3px;
+            border-radius: 50%!important;
+            width: 36px;
+            height: 36px;
+            font-size: .875rem;
+            border: 1px solid #dee2e6;
+        
+            }
+           }
+           .page-item.active .page-link {
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);}
+            .pagination li:nth-child(4) a{
+                background-color: #dee2e6 ;
+            }
+        
+        .sidebar-right{
+            .form-item{
+                .form-parametr{ 
+                    color: $four-color;
+                    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+                    border:none;
+                    transition: box-shadow .15s ease;
+                    outline:none;
+                    font-size:$button-size;
+                    display: block;
+            width: 100%;
+            height: calc(44px + 2px);
+            padding: 10px 12px;
+            line-height: 1.5;
+           
+            background-color: $first-color;
+            
+            border-radius: 4px;
+            &:focus{
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+        }
+        &::placeholder{
+            color: $four-color;
+        }
+            }
+                }
+            
+        }    
+        label{
+            font-weight: 400;
+            line-height: 1.5;
+                color:$six-color;
+            font-size:$button-size;
+        }
+        .btn{
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all .15s ease;
+            letter-spacing:1px;
+            font-size: $button-size;
+            color: $first-color;
+            background-color: $sec-color;
+            border-color: $sec-color;
+            box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            line-height: 1.5;
+            border-radius: 4px;
+            &:active{
+                box-shadow:none;
+        
+          }
+          &:hover{
+            background-color: $sec-color;   
+            transform: translateY(-1px);}
+        }
+        .bg-gradient{
+            background: linear-gradient(87deg,#fb6340 0,#fbb140 100%)!important;
+            border-radius:5px;
+            .txt-color{
+                color:$first-color;
+            }
+            p{
+                font-size:$text-title-size!important;
+            }
+            h4{
+                font-size:19.2px;
+                font-weight:700;
+            }
+        }
+
+    }
+
+    footer{
+        @extend %myFooterExtend;
+    }
+}
